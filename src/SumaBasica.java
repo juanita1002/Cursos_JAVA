@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 public class SumaBasica {
     public static void main(String[] args) {
 
