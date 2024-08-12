@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class SumaBasica {
     public static void main(String[] args) {
 
