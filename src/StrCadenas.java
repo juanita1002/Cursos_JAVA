@@ -21,6 +21,13 @@ public class StrCadenas
         String saludarUsuario = saludar + " " + usuario; //concatenar dos strings
         System.out.println("saludarUsuario = " + saludarUsuario);
 
+        //usar metodo concat para concatenar strings
+        String usuario0 = "Ivan";
+        String  saludar0 = "Hola";
+        String saludarUsuario0 = saludar0.concat(" ").concat(usuario0); //concatenar dos strings
+        System.out.println("saludarUsuario0 = " + saludarUsuario0);
+
+
         //comparar dos strings
         String usuario1 = "Juanita";
         String usuario2 = "Juanita";
@@ -122,6 +129,10 @@ public class StrCadenas
         String numeroStr = String.valueOf(numero); //convertir un entero a string
         System.out.println("numeroStr = " + numeroStr);
 
+        //usar metodo transform para aplicar una funcion a un string
+        String texto13 = "curso de programacion java";
+        String resultado7 = texto13.transform(s -> s.toUpperCase()); //convertir el string a mayusculas
+        System.out.println("resultado7 = " + resultado7);
 
     }
 }
