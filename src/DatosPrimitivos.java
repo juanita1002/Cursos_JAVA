@@ -21,17 +21,6 @@ public class DatosPrimitivos {
 
     }
 
-    //crear un objeto de tipo carro con los siguientes atributos y metodos color, marca, modelo
-
-    public class Carro {
-      Carro car = new Carro();
-        String color;
-        String marca;
-        String modelo;
-
-
-
-    }
 
 
 }
