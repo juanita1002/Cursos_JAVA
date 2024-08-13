@@ -4,19 +4,23 @@ public class Tiempo {
 
         //Tiempo en que se demora en concatenar cadenas de texto con concat, += y StringBuilder
 
-        long inicio = System.currentTimeMillis();
+
 
         String a = "a";
         String b = "b";
         String c = a;
+
         StringBuilder sb = new StringBuilder(a); //que es String builder? es una clase que permite concatenar cadenas de texto de manera eficiente
 
-        for (int i = 0; i < 100000; i++) {
-            //c= c.concat(a).concat(b); //mucho mas eficiente que c+=a+b; dura unos 10 ms menos que la otra
-            //c+=a+b;
-            sb.append(a).append(b); //mucho mas eficiente que concat y +=
+        long inicio = System.currentTimeMillis();
+
+        for (int i = 0; i < 10000; i++) {
+            //c= c.concat(a).concat(b); //mucho mas eficiente que c+=a+b; dura unos 10 ms menos que la otra forma // 10000 -> 23 ms en promedio
+            //c+=a+b; // 10000 -> 33 ms en promedio
+            sb.append(a).append(b); //mucho mas eficiente que concat y += // 10000 -> 0 ms en promedio
 
         }
+
         long fin = System.currentTimeMillis();
 
 
