@@ -24,8 +24,10 @@ public class StrCadenas
         //usar metodo concat para concatenar strings
         String usuario0 = "Ivan";
         String  saludar0 = "Hola";
-        String saludarUsuario0 = saludar0.concat(" ").concat(usuario0); //concatenar dos strings
+        String saludarUsuario0 = saludar0.concat(" ".concat(usuario0)); //concatenar dos strings
         System.out.println("saludarUsuario0 = " + saludarUsuario0);
+        String saludiarUsuario1 = saludar0.concat(" ").concat(usuario0); //concatenar dos strings
+        System.out.println("saludiarUsuario1 = " + saludiarUsuario1);
 
 
         //comparar dos strings
@@ -66,7 +68,9 @@ public class StrCadenas
         char[] arreglo = texto2.toCharArray(); //convertir el string en un arreglo de caracteres
         for (int i = 0; i < arreglo.length; i++) {
             System.out.println("arreglo[" + i + "] = " + arreglo[i]);
+
         }
+        System.out.println(" arreglo length = " + arreglo.length);
 
         //usar metodo substring para obtener una subcadena de un string
         String texto3 = "curso de programacion java";
@@ -107,7 +111,15 @@ public class StrCadenas
         String texto10 = "curso de programacion java";
         String[] arreglo1 = texto10.split(" "); //dividir el string en un arreglo de strings cada vez que encuentre un espacio
         for (int i = 0; i < arreglo1.length; i++) {
-            System.out.println("arreglo1[" + i + "] = " + arreglo1[i]);
+            System.out.println("arreglo1[" + i + "] = " + arreglo1[i]); //imprimir cada elemento del arreglo de strings
+        }
+        System.out.println("arreglo1.length = " + arreglo1.length);
+
+        //cuando se usa split con un punto se debe usar el caracter de escape \\.
+        String textoN = "curso.de.programacion.java";
+        String[] arregloN = textoN.split("\\."); //dividir el string en un arreglo de strings cada vez que encuentre un punto o usar corchetes [.] para dividir por punto
+        for (int i = 0; i < arregloN.length; i++) {
+            System.out.println("arregloN[" + i + "] = " + arregloN[i]); //imprimir cada elemento del arreglo de strings
         }
 
         //usar metodo toUpperCase para convertir un string a mayusculas

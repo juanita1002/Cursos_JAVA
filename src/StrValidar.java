@@ -7,7 +7,7 @@ public class StrValidar {
         try {
             System.out.println("Curso es nulo: " + esNulo); // true
 
-            boolean esVacio = Curso.length() == 0 || Curso.isEmpty() || Curso.trim().length() == 0 || Curso.equals("") || Curso.isBlank();
+            boolean esVacio = Curso.length() == 0 || Curso.isEmpty() || Curso.trim().length() == 0 || Curso.equals("") || Curso.isBlank(); //
             System.out.println("esVacio = " + esVacio);
             if (esVacio) {
                 System.out.println("Curso es vacio");
