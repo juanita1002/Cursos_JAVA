@@ -1,4 +1,4 @@
-public class OperadoresAritmeticos {
+public class Operadores {
     public static void main(String[] args) {
 
         // Operadores aritméticos
@@ -61,6 +61,8 @@ public class OperadoresAritmeticos {
         System.out.println("Módulo y asignación: " + a);
 
         //Operador ternario o condicional
+            // variable = (condición) ? expresión1 : expresión2
+            //Si la condición es verdadera entonces variable = expresión1, de lo contrario variable = expresión2
 
         int c = 10;
         int d = 5;
@@ -70,6 +72,11 @@ public class OperadoresAritmeticos {
         System.out.println("El resultado es: " + resultado2);
         int resultado3 = (c < d) ? 1:0; //Si c es menor que d entonces resultado = 1, de lo contrario resultado = 0
         System.out.println("El resultado es: " + resultado3);
+        String variable = (c > d) ? "Verdadero":"Falso"; //Si c es mayor que d entonces variable = "Verdadero", de lo contrario variable = "Falso"
+        System.out.println("El resultado es: " + variable);// "Verdadero" Si c es mayor que d es verdadero
+        String variable2 = (c > d) ? "Verdadero":"Falso"; System.out.println("El resultado es: " + variable2);
+
+
 
         //Operadores relacionales
         // ==, !=, >, <, >=, <= devuelve un valor booleano true o false
