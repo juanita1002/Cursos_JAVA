@@ -127,15 +127,22 @@ public class Operadores {
         //false ^ false = false
 
         //Precedencia de operadores
-        //1. ()
-        //2. ++, --, +, - (unarios)
-        //3. *, /, %
-        //4. +, -
-        //5. <, >, <=, >=
-        //6. ==, !=
-        //7. &&
-        //8. ||
-        //9. =, +=, -=, *=, /=, %=
+        // de derecha a izquierda
+        //1. ()                         (paréntesis)
+        //2. ++, --, +, -               (unarios)
+        //3. *, /, %                    (multiplicación, división, módulo)
+        //4. +, -                       (suma, resta)
+        //5. <, >, <=, >= intanceof     (comparación)
+        //6. ==, !=                     (igualdad, desigualdad)
+        //7. &&                         (y lógico)
+        //8. ||                         (o lógico)
+        //9. =, +=, -=, *=, /=, %=      (asignación)
+        //10. ? :                       (ternario)
+        //11. &                         (y lógico)
+        //12. |                         (o lógico)
+        //13. ^                         (o exclusivo)
+        //14. !                         (negación lógica)
+
 
 
 
