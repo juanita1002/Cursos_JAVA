@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class FlujosDeControl {
     public static void main(String[] args) {
 
@@ -5,11 +7,15 @@ public class FlujosDeControl {
       // else if es una estructura de control que permite ejecutar un bloque de código si no se cumple la condición del if
       // else es una estructura de control que permite ejecutar un bloque de código si no se cumple la condición del if o del else if
 
-        int numero = 10;
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe un número: ");
+        int numero = sc.nextInt();
 
         if (numero > 0) {
          System.out.println("El número es positivo");
-         } else if (numero > 0) {
+         } else if (numero < 0) {
              System.out.println("El número es negativo");
          }else {
              System.out.println("El número es cero");
