@@ -12,7 +12,7 @@ public class PromedioClases {
 
         for (int i = 0; i < materias.length; i++)
         {
-            System.out.println("Escribir nota de: " + materias[i]);
+            System.out.println("Escribir nota de " + materias[i] + ", " + "Calificacion maxima 5,0:");
             calificaciones[i] = sc.nextDouble();
         }
 
