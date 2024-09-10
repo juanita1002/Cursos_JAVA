@@ -19,7 +19,8 @@ public class VariablesDeEntorno {
         System.out.println("TEMP = " + temp); // Imprime el valor de la variable de entorno TEMP
         String saludo = System.getenv("SALUDAR_HOLA"); // Obtiene el valor de la variable de entorno SALUDO
         System.out.println("saludo = " + saludo); // Imprime el valor de la variable de entorno SALUDO
-        //En la terminal se puede definir una variable de entorno con el comando export NOMBRE_VARIABLE=VALOR_VARIABLE
+        //En la terminal se puede definir una variable de entorno con el comando setx NOMBRE_VARIABLE VALOR_VARIABLE
         //Ejemplo setx SALUDAR_HOLA "Hola que tal"  en windows
     }
 }
+
