@@ -30,9 +30,35 @@ public class JavaUtilCalendar {
         String fechaTexto = sc.nextLine();
 
         try {
-            Date fecha2 = df2.parse(fechaTexto);//Se debe ingresar fecha con este formato
-            String fechaTexto2 = df.format(fecha2); //Se debe ingresar fecha con este formato
-            System.out.println("fecha2 = " +  fechaTexto2); // Imprimir la fecha y hora actual con el formato especificado
+            Date fechaUsuario = df2.parse(fechaTexto);//Se debe ingresar fecha con este formato
+            String fechaTexto2 = df.format(fechaUsuario); //Se debe ingresar fecha con este formato
+            System.out.println("fechaUsuario = " +  fechaTexto2); // Imprimir la fecha y hora actual con el formato especificado
+
+            Date fechaSistema = new Date();
+            String fechaSistema2 = df.format(fechaSistema);
+            System.out.println("fechaSistema = " + fechaSistema2);
+
+            //////////// forma de comparar fechas
+            if(fechaUsuario.after(fechaSistema)){ //Compara si la fechaUsuario es posterior a la fechaSistema
+                System.out.println("La fechaUsuario es posterior a la fechaSistema");
+            }else if(fechaUsuario.before(fechaSistema)){ //Compara si la fechaUsuario es anterior a la fechaSistema
+                System.out.println("La fechaUsuario es anterior a la fechaSistema");
+            }else if(fechaUsuario.equals(fechaSistema)){ //Compara si la fechaUsuario es igual a la fechaSistema
+                System.out.println("La fechaUsuario es igual a la fechaSistema");
+            }
+            //////////// otra forma de comparar fechas
+
+            if(fechaUsuario.compareTo(fechaSistema) > 0){ //Compara si la fechaUsuario es posterior a la fechaSistema
+                System.out.println("La fechaUsuario es posterior a la fechaSistema");
+            }else if(fechaUsuario.compareTo(fechaSistema) < 0){ //Compara si la fechaUsuario es anterior a la fechaSistema
+                System.out.println("La fechaUsuario es anterior a la fechaSistema");
+            }else if(fechaUsuario.compareTo(fechaSistema) == 0){ //Compara si la fechaUsuario es igual a la fechaSistema
+                System.out.println("La fechaUsuario es igual a la fechaSistema");
+            }
+
+            ////////////
+
+
         } catch (ParseException e) {
             System.out.println("Error: " + e.getMessage());
            // throw new RuntimeException(e);
