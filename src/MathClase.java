@@ -2,6 +2,8 @@ import java.util.Random;
 
 public class MathClase {
     public static void main(String[] args) {
+
+        // Clase Math
         System.out.println("Math.PI = " + Math.PI); // Valor de PI
         System.out.println("Math.E = " + Math.E); // Valor de E (Número de Euler)
         System.out.println("Math.abs(-5) = " + Math.abs(-5)); // Valor absoluto de un número entero o decimal
@@ -36,13 +38,11 @@ public class MathClase {
         random2 = Math.round(random2); // Redondear el número
         System.out.println("random2 redondeado= " + random2); // Número aleatorio entre 0 y 10
 
-
+       //Random con la clase Random de Java
         String[] colores = {"Rojo", "Azul", "Verde", "Amarillo", "Negro", "Blanco"};
         double random3 = Math.random() * colores.length;
         String color  = colores[(int) random3];
         System.out.println("colores = " + color + " Esta en la Posicion: " + (int)random3 );
-
-       //Ramdom con objetos
         Random ram = new Random();
         int ramd = ram.nextInt(1000,2000); //
         double ramd2 = ram.nextDouble(10,20);
@@ -52,6 +52,8 @@ public class MathClase {
         System.out.println("ram = " +  ramd  );
         System.out.println("ramd2 = " + ramd2);
         System.out.println("colores = " + colores[ramd3]);
+
+
 
     }
 }
