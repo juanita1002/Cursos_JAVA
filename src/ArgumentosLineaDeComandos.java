@@ -17,7 +17,6 @@ public class ArgumentosLineaDeComandos {
         // Se puede ejecutar desde IDE con argumentos en la configuración de ejecución
         // Tres puntos en la parte superior derecha de la ventana de ejecución, luego en Edit Configurations
         // y en la pestaña de Program Arguments se pueden agregar los argumentos ejem: arg1 arg2 arg3 arg4
-
     }
 
 }
