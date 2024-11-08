@@ -6,12 +6,13 @@ public class SumaBasica {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Introduce el primer número: ");
-        int a = scanner.nextInt();
+        double a = scanner.nextInt();
 
         System.out.print("Introduce el segundo número: ");
         int b = scanner.nextInt();
 
-        int suma = a + b;
+        //A a se le hace un cast (a) int para que el resultado sea entero ya que (a) es double
+        int suma = (int) a + b;
         System.out.println("La suma de " + a + " + " + b + " es: " + suma);
     }
 }
