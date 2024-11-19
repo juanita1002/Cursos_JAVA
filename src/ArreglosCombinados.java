@@ -17,8 +17,6 @@ public class ArreglosCombinados {
             arregloCombinado[aux++] = segundoArreglo[j];
         }
 
-
-
         for (int i = 0; i < arregloCombinado.length; i++) {
          //   Arrays.sort(arregloCombinado); //  Este método organiza los elementos del arreglo arregloCombinado
             System.out.println("arregloCombinado posicion " + i + " = " + arregloCombinado[i]);
